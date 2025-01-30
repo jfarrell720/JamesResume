@@ -5,9 +5,10 @@ import { DocumentsComponent } from '../app/documents/documents.component';
 import { SkillsComponent } from '../app/skills/skills.component';
 
 export const appRoutes: Routes = [
-  { path: '', component: HomePageComponent },
+  // { path: '', component: HomePageComponent },
+  { path: '', redirectTo: '/aboutme', pathMatch: 'full' },
   { path: 'aboutme', component: AboutMeComponent },
-  { path: 'skills', component: DocumentsComponent },
-  { path: 'documents', component: SkillsComponent },
+  { path: 'skills', component: SkillsComponent },
+  { path: 'documents', component: DocumentsComponent },
 
 ];

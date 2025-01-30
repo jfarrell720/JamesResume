@@ -1,7 +1,6 @@
-<mat-tab-group>
-  <mat-tab label="First" [routerLink]="['aboutme']" routerLinkActive="active"></mat-tab>
-  <mat-tab label="Second" [routerLink]="['/skills']"routerLinkActive="active"></mat-tab>
-  <mat-tab label="Third" [routerLink]="['/documents']" routerLinkActive="active"></mat-tab>
+<mat-tab-group (selectedTabChange)="onTabChange($event)">
+  <mat-tab label="First"></mat-tab>
+  <mat-tab label="Second"></mat-tab>
+  <mat-tab label="Third"></mat-tab>
 </mat-tab-group>
-
 <router-outlet></router-outlet> <!-- This is where routed components will be displayed -->
