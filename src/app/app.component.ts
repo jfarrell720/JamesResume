@@ -27,6 +27,8 @@ export class AppComponent {
       this.router.navigate(['/skills']);
     } else if (tabIndex === 2) {
       this.router.navigate(['/documents']);
+    } else if (tabIndex === 3) {
+      this.router.navigate(['/contactme']);
     }
   }
 }
