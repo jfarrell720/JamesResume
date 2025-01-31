@@ -4,19 +4,23 @@
     border: 2px solid black;
     border-radius: 8px;
     background-color: #f9f9f9;
-    max-width: 500px;
-    margin: auto;
+    max-width: 600px;
+    margin: 50px auto; /* Add margin to move the form down */
   }
   
   form div {
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Increase margin for better spacing */
   }
   
   input, textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+  }
+  
+  textarea {
+    height: 150px; /* Increase only the height of the message textarea */
   }
   
   button {
@@ -32,6 +36,7 @@
     background-color: #45a049;
   }
   
+  /* Toast styles for success/failure notifications */
   .toast {
     position: fixed;
     bottom: 20px;

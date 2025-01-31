@@ -21,7 +21,7 @@ export class ContactmeComponent {
     // Prepare the template parameters to match the template variable names
     const templateParams = {
       from_name: this.userName,  // from_name should be the sender's name
-      user_email: this.userEmail, // Optionally send the user's email
+      from_email: this.userEmail, // Optionally send the user's email
       message: this.message       // The message content
     };
 
@@ -32,9 +32,12 @@ export class ContactmeComponent {
         () => {
           alert('Success! Your message has been sent.');
           console.log('SUCCESS!');
+          this.userName  = '';
+          this.userEmail = '';
+          this.message = '';
         },
         (error) => {
-          alert('Failed to send the message. Please try again later.');
+          alert('Failed to send the message. Please try again later, or email me directly jamesfarrell720@gmail.com');
           console.log('FAILED...', (error as EmailJSResponseStatus).text);
         }
       );
