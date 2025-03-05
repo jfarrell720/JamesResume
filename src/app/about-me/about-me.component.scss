@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Vertically centers the content */
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between; /* Space between text and image */
+  align-items: center; /* Vertically aligns text and image */
+  width: 100%;
+}
+
+.info-section {
+  max-width: 50%; /* Controls width of the info section */
+  text-align: left; /* Aligns text to the left */
+}
+
+.profile-pic-container {
+  width: 300px; /* Size of the profile picture container */
+  height: 300px; /* Makes it square */
+  overflow: hidden; /* Ensures the image fits within the circle */
+  border-radius: 50%; /* Makes the container circular */
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills container without distortion */
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.pictures-container {
+  display: flex;
+  justify-content: space-around; /* Adjusts spacing between items */
+  flex-wrap: wrap; /* Allows the items to wrap onto the next line if needed */
+  gap: 10px; /* Adds space between items */
+}
+.pictures {
+  padding: 5px;
+  height: 125%;
+  max-width: 150%;
+  display: block;
+  margin: 0 auto; /* Centers the image inside its div */
+}
+.pictures-container div {
+  text-align: center; /* Centers the text under each image */
+  width: 150px; /* You can adjust this as needed */
+}

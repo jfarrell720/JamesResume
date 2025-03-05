@@ -1,0 +1,64 @@
+.email-form {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 50px auto; /* Add margin to move the form down */
+  }
+  
+  form div {
+    margin-bottom: 15px; /* Increase margin for better spacing */
+  }
+  
+  input, textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    height: 150px; /* Increase only the height of the message textarea */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Toast styles for success/failure notifications */
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .toast-success {
+    background-color: green;
+  }
+  
+  .toast-failure {
+    background-color: red;
+  }
+  
+  .toast.show {
+    opacity: 1;
+  }
+  
